@@ -256,6 +256,11 @@
                 <artifactId>hk-core-stream-kafka</artifactId>
                 <version>${hk.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-stream-rocketmq</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
 
             <!-- <dependency>
                  <groupId>com.hk</groupId>
