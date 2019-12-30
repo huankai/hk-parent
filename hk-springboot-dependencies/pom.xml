@@ -28,7 +28,7 @@
         <poi.version>4.0.1</poi.version>
         <hk.version>2.1.8.RELEASE</hk.version>
         <pagehelper.mapper.version>1.2.3</pagehelper.mapper.version>
-        <tencentcloud.version>3.0.108</tencentcloud.version>
+        <tencentcloud.version>3.0.116</tencentcloud.version>
     </properties>
 
     <!-- 发布到私服地址-->
