@@ -479,6 +479,7 @@
                         <manifestEntries>
                             <Created-By>Kevin</Created-By>
                             <Github>https://github.com/huankai</Github>
+                            <Gitee>https://gitee.com/huankai</Gitee>
                             <Email>huankai@139.com</Email>
                         </manifestEntries>
                     </archive>
