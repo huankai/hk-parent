@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
-        <comons.io.version>2.6</comons.io.version>
+        <comons.io.version>2.7</comons.io.version>
         <commons.text.version>1.8</commons.text.version>
         <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
         <spring.boot.admin.version>2.2.2</spring.boot.admin.version>
