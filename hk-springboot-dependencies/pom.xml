@@ -24,6 +24,7 @@
         <hibernate.jackson.version>2.12.4</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
         <disruptor.version>3.4.4</disruptor.version>
+        <influxdb.version>2.0.0</influxdb.version>
         <poi.version>5.0.0</poi.version>
         <hk.version>2.4.6</hk.version>
         <guava.version>30.1-jre</guava.version>
@@ -279,6 +280,17 @@
                 <artifactId>hk-core-stream-rocketmq</artifactId>
                 <version>${hk.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.influxdb</groupId>
+                <artifactId>influxdb-client-java</artifactId>
+                <version>${influxdb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.influxdb</groupId>
+                <artifactId>flux-dsl</artifactId>
+                <version>${influxdb.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.lmax</groupId>
                 <artifactId>disruptor</artifactId>
