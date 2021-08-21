@@ -257,7 +257,11 @@
                 <artifactId>hk-core-redis</artifactId>
                 <version>${hk.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-data-influx</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
                 <artifactId>hk-core-springboot-autoconfigure</artifactId>
