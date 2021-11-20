@@ -463,9 +463,7 @@
                     <source>${java.version}</source> <!-- 源代码使用的jdk版本 -->
                     <target>${java.version}</target> <!-- 构建后生成class文件jdk版本 -->
                     <encoding>${project.build.sourceEncoding}</encoding> <!-- 构建使用的编码 -->
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                    </compilerArgs> <!-- 启用预览功能 -->
+                    <compilerArgs>--enable-preview</compilerArgs> <!-- 启用预览功能 -->
                 </configuration>
             </plugin>
 
