@@ -8,6 +8,17 @@
     <version>2.5.6</version>
     <packaging>pom</packaging>
 
+    <!--
+        使用 starter-parent可以修改依赖项目的版本号
+        使用 spring-boot-dependencies 不能修改指定依赖的版本号
+    -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.6</version>
+        <relativePath/>
+    </parent>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -24,6 +35,7 @@
         <hibernate.jackson.version>2.12.5</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
         <disruptor.version>3.4.4</disruptor.version>
+        <log4j2.version>2.15.0</log4j2.version><!--log4j2爆出的漏洞，更新到新版本-->
         <influxdb.version>3.4.0</influxdb.version>
         <poi.version>5.0.0</poi.version>
         <hk.version>2.5.6</hk.version>
@@ -48,14 +60,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
