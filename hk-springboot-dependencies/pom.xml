@@ -24,7 +24,7 @@
         <hibernate.jackson.version>2.10.2</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2.2.0.RELEASE</spring.cloud.alibaba.version>
         <disruptor.version>3.4.2</disruptor.version>
-        <poi.version>4.1.2</poi.version>
+        <poi.version>5.2.1</poi.version>
         <hk.version>2.2.4.RELEASE</hk.version>
         <pagehelper.mapper.version>1.2.13</pagehelper.mapper.version>
         <tencentcloud.version>3.1.0</tencentcloud.version>
