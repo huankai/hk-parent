@@ -1,0 +1,7 @@
+ext {
+    version = [
+            "springBootVersion" : "",
+            "springCloudVersion": ""
+
+    ]
+}
