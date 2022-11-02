@@ -270,6 +270,11 @@
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
+                <artifactId>hk-core-data-mongodb</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hk</groupId>
                 <artifactId>hk-core-data-elasticsearch</artifactId>
                 <version>${hk.version}</version>
             </dependency>
