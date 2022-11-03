@@ -32,7 +32,7 @@
         <aliyun.oss.version>3.15.2</aliyun.oss.version>
         <hibernate.type.version>2.20.0</hibernate.type.version>
         <hibernate.jackson.version>2.13.4</hibernate.jackson.version>
-        <spring.cloud.alibaba.version>2021.1</spring.cloud.alibaba.version>
+        <spring.cloud.alibaba.version>2021.0.4.0</spring.cloud.alibaba.version>
         <disruptor.version>3.4.4</disruptor.version>
         <influxdb.version>6.6.0</influxdb.version>
         <poi.version>5.2.3</poi.version>
@@ -150,11 +150,6 @@
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
-                <artifactId>hk-core-page</artifactId>
-                <version>${hk.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hk</groupId>
                 <artifactId>hk-core-service</artifactId>
                 <version>${hk.version}</version>
             </dependency>
@@ -246,12 +241,6 @@
                 <artifactId>hk-core-test</artifactId>
                 <version>${hk.version}</version>
                 <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.hk</groupId>
-                <artifactId>hk-core-data-commons</artifactId>
-                <version>${hk.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
