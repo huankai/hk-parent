@@ -43,7 +43,7 @@
         <rocketmq.springboot.version>2.2.2</rocketmq.springboot.version>
         <minio.version>8.4.6</minio.version>
         <javacv.platform.version>1.5.8</javacv.platform.version>
-        <lunar.version>1.2.27</lunar.version>
+        <lunar.version>1.2.26</lunar.version>
         <thumbnailator.version>0.4.18</thumbnailator.version>
         <schild.version>3.3.1</schild.version>
         <jmh.version>1.36</jmh.version>
@@ -400,7 +400,7 @@
             <!-- hibernate 类型转换：如 mysql 中的json类型-->
             <dependency>
                 <groupId>com.vladmihalcea</groupId>
-                <artifactId>hibernate-types-52</artifactId>
+                <artifactId>hibernate-types-60</artifactId>
                 <version>${hibernate.type.version}</version>
             </dependency>
             <!-- jackson hibernate 懒加载配置 查看 JsonUtils 类型中的配置 -->
