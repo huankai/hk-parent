@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hk-parent</artifactId>
     <groupId>com.hk</groupId>
-    <version>3.0.0</version>
+    <version>3.0.2</version>
     <packaging>pom</packaging>
     <!--
         使用 starter-parent可以修改依赖项目的版本号
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version>
+        <version>3.0.2</version>
         <relativePath/>
     </parent>
 
@@ -26,17 +26,17 @@
         <commons.text.version>1.10.0</commons.text.version>
         <opencsv.version>5.7.1</opencsv.version>
         <spring.boot.version>3.0.0</spring.boot.version>
-        <spring.cloud.version>2021.0.5</spring.cloud.version>
-        <weixin.java.version>4.4.5.B</weixin.java.version>
+        <spring.cloud.version>2022.0.1</spring.cloud.version>
+        <weixin.java.version>4.4.8.B</weixin.java.version>
         <alipay.version>4.34.68.ALL</alipay.version>
         <aliyun.oss.version>3.15.2</aliyun.oss.version>
         <hibernate.type.version>2.20.0</hibernate.type.version>
         <hibernate.jackson.version>2.14.1</hibernate.jackson.version>
-        <spring.cloud.alibaba.version>2021.0.4.0</spring.cloud.alibaba.version>
+        <spring.cloud.alibaba.version>2022.0.0.0-RC1</spring.cloud.alibaba.version>
         <disruptor.version>3.4.4</disruptor.version>
         <influxdb.version>6.7.0</influxdb.version>
         <poi.version>5.2.3</poi.version>
-        <hk.version>3.0.0</hk.version>
+        <hk.version>3.0.2</hk.version>
         <tencentcloud.version>4.0.11</tencentcloud.version>
         <oracle.jdbc.version>19.16.0.0</oracle.jdbc.version>
         <curator.version>5.4.0</curator.version>
@@ -50,11 +50,9 @@
         <google.zxing.version>3.5.1</google.zxing.version>
         <google.guava.version>31.1-jre</google.guava.version>
         <mybatis.version>3.5.11</mybatis.version>
-        <mybatis.spring.version>3.0.0</mybatis.spring.version>
+        <mybatis.spring.version>3.0.1</mybatis.spring.version>
         <mybatis.springboot.version>2.2.2</mybatis.springboot.version>
         <jasync.mysql.version>2.1.7</jasync.mysql.version>
-        <!--   使用8.5.2版本     -->
-        <elasticsearch-client.version>8.5.2</elasticsearch-client.version>
     </properties>
 
     <!-- 发布到私服地址-->
