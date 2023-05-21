@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hk-parent</artifactId>
     <groupId>com.hk</groupId>
-    <version>3.0.2</version>
+    <version>3.1.0</version>
     <packaging>pom</packaging>
     <!--
         使用 starter-parent可以修改依赖项目的版本号
@@ -14,45 +14,45 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.2</version>
-        <relativePath />
+        <version>3.1.0</version>
+        <relativePath/>
     </parent>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>17</java.version>
-        <comons.io.version>2.11.0</comons.io.version>
+        <comons.io.version>2.12.0</comons.io.version>
         <commons.text.version>1.10.0</commons.text.version>
         <opencsv.version>5.7.1</opencsv.version>
-        <spring.boot.version>3.0.0</spring.boot.version>
-        <spring.cloud.version>2022.0.1</spring.cloud.version>
-        <weixin.java.version>4.4.8.B</weixin.java.version>
-        <alipay.version>4.34.68.ALL</alipay.version>
-        <aliyun.oss.version>3.15.2</aliyun.oss.version>
-        <hibernate.type.version>2.20.0</hibernate.type.version>
-        <hibernate.jackson.version>2.14.1</hibernate.jackson.version>
-        <spring.cloud.alibaba.version>2022.0.0.0-RC1</spring.cloud.alibaba.version>
+        <spring.boot.version>3.1.0</spring.boot.version>
+        <spring.cloud.version>2022.0.2</spring.cloud.version>
+        <weixin.java.version>4.5.0</weixin.java.version>
+        <alipay.version>4.35.132.ALL</alipay.version>
+        <aliyun.oss.version>3.16.3</aliyun.oss.version>
+        <hibernate.type.version>2.21.1</hibernate.type.version>
+        <hibernate.jackson.version>2.15.1</hibernate.jackson.version>
+        <spring.cloud.alibaba.version>2022.0.0.0-RC2</spring.cloud.alibaba.version>
         <disruptor.version>3.4.4</disruptor.version>
-        <influxdb.version>6.7.0</influxdb.version>
+        <influxdb.version>6.8.0</influxdb.version>
         <poi.version>5.2.3</poi.version>
-        <hk.version>3.0.2</hk.version>
+        <hk.version>3.1.0</hk.version>
         <tencentcloud.version>4.0.11</tencentcloud.version>
-        <oracle.jdbc.version>19.16.0.0</oracle.jdbc.version>
-        <curator.version>5.4.0</curator.version>
+        <oracle.jdbc.version>19.18.0.0</oracle.jdbc.version>
+        <curator.version>5.5.0</curator.version>
         <rocketmq.springboot.version>2.2.2</rocketmq.springboot.version>
-        <minio.version>8.4.6</minio.version>
+        <minio.version>8.5.2</minio.version>
         <javacv.platform.version>1.5.8</javacv.platform.version>
-        <lunar.version>1.2.26</lunar.version>
-        <thumbnailator.version>0.4.18</thumbnailator.version>
+        <lunar.version>1.6.3</lunar.version>
+        <thumbnailator.version>0.4.19</thumbnailator.version>
         <schild.version>3.3.1</schild.version>
         <jmh.version>1.36</jmh.version>
         <google.zxing.version>3.5.1</google.zxing.version>
         <google.guava.version>31.1-jre</google.guava.version>
-        <mybatis.version>3.5.11</mybatis.version>
-        <mybatis.spring.version>3.0.1</mybatis.spring.version>
-        <mybatis.springboot.version>2.2.2</mybatis.springboot.version>
-        <jasync.mysql.version>2.1.7</jasync.mysql.version>
+        <mybatis.version>3.5.13</mybatis.version>
+        <mybatis.spring.version>3.1.0</mybatis.spring.version>
+        <mybatis.springboot.version>3.1.0</mybatis.springboot.version>
+        <jasync.mysql.version>2.1.24</jasync.mysql.version>
     </properties>
 
     <!-- 发布到私服地址-->
@@ -250,7 +250,7 @@
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
-                <artifactId>hk-core-test</artifactId>
+                <artifactId>hk-core-test-autoconfigure</artifactId>
                 <version>${hk.version}</version>
                 <scope>test</scope>
             </dependency>
@@ -360,8 +360,8 @@
 
             <dependency>
                 <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15on</artifactId>
-                <version>1.70</version>
+                <artifactId>bcprov-jdk18on</artifactId>
+                <version>1.73</version>
             </dependency>
 
             <dependency>
@@ -449,11 +449,10 @@
             </dependency>
 
             <!-- 与 spring-cloud-starter-stream-rocketmq 依赖的版本对应   -->
-            <dependency>
-                <groupId>org.apache.rocketmq</groupId>
-                <artifactId>rocketmq-spring-boot-starter</artifactId>
-                <version>${rocketmq.springboot.version}</version>
-            </dependency>
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.rocketmq</groupId>-->
+            <!--                <artifactId>rocketmq-spring-boot-starter</artifactId>-->
+            <!--            </dependency>-->
 
             <!--基于zookeeper的客户端实现-->
             <dependency>
