@@ -50,8 +50,8 @@
         <google.zxing.version>3.5.1</google.zxing.version>
         <google.guava.version>31.1-jre</google.guava.version>
         <mybatis.version>3.5.13</mybatis.version>
-        <mybatis.spring.version>3.1.0</mybatis.spring.version>
-        <mybatis.springboot.version>3.1.0</mybatis.springboot.version>
+        <mybatis.spring.version>3.0.2</mybatis.spring.version>
+        <mybatis.springboot.version>3.0.2</mybatis.springboot.version>
         <jasync.mysql.version>2.1.24</jasync.mysql.version>
     </properties>
 
@@ -188,14 +188,7 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-oauth2-authorization-server</artifactId>
-                <version>1.0.0</version>
-                <!-- 现在0.3.1版本使用的 core版本较低，这里排除，使用项目默认的版本-->
-                <!--                <exclusions>-->
-                <!--                    <exclusion>-->
-                <!--                        <groupId>org.springframework</groupId>-->
-                <!--                        <artifactId>spring-core</artifactId>-->
-                <!--                    </exclusion>-->
-                <!--                </exclusions>-->
+                <version>1.1.0</version>
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
