@@ -27,9 +27,9 @@
         <opencsv.version>5.7.1</opencsv.version>
         <spring.boot.version>3.1.0</spring.boot.version>
         <spring.cloud.version>2022.0.2</spring.cloud.version>
-        <weixin.java.version>4.5.0</weixin.java.version>
-        <alipay.version>4.35.132.ALL</alipay.version>
-        <aliyun.oss.version>3.16.3</aliyun.oss.version>
+        <weixin.java.version>4.5.5.B</weixin.java.version>
+        <alipay.version>4.38.61.ALL</alipay.version>
+        <aliyun.oss.version>3.17.1</aliyun.oss.version>
         <hibernate.type.version>2.21.1</hibernate.type.version>
         <hibernate.jackson.version>2.15.1</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2022.0.0.0-RC2</spring.cloud.alibaba.version>
@@ -529,7 +529,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.3.1</version>
                 <configuration>
                     <skip>false</skip> <!-- 忽略clean [mvn clean -Dmaven.clean.skip=true] -->
                     <failOnError>false</failOnError> <!-- clean时忽略错误 [mvn clean -Dmaven.clean.failOnError=false] -->
@@ -549,7 +549,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source> <!-- 源代码使用的jdk版本 -->
                     <target>${java.version}</target> <!-- 构建后生成class文件jdk版本 -->
@@ -562,15 +562,45 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M7</version>
+                <version>3.1.2</version>
                 <configuration>
-                    <skipTests>true</skipTests>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <argLine>${surefireArgLine}</argLine>
                 </configuration>
+            </plugin>
+            <!--     jacoco 单元测试覆盖率插件，与 maven-surefire-plugin 配合一起使用       -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version>
+                <executions>
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>target/coverage-reports/jacoco.exec</destFile>
+                            <propertyName>surefireArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>default-report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>target/coverage-reports/jacoco.exec</dataFile>
+                            <outputDirectory>target/jacoco</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -606,12 +636,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
-                <version>3.0.1</version>
+                <version>3.1.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.1</version>
             </plugin>
         </plugins>
         <pluginManagement>
