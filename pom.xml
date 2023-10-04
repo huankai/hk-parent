@@ -53,6 +53,10 @@
         <mybatis.spring.version>3.0.2</mybatis.spring.version>
         <mybatis.springboot.version>3.0.2</mybatis.springboot.version>
         <jasync.mysql.version>2.1.24</jasync.mysql.version>
+        <maven-clean-plugin.version>3.3.1</maven-clean-plugin.version>
+        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+        <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
+        <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
     </properties>
 
     <!-- 发布到私服地址-->
@@ -529,7 +533,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
-                <version>3.3.1</version>
                 <configuration>
                     <skip>false</skip> <!-- 忽略clean [mvn clean -Dmaven.clean.skip=true] -->
                     <failOnError>false</failOnError> <!-- clean时忽略错误 [mvn clean -Dmaven.clean.failOnError=false] -->
@@ -549,7 +552,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source> <!-- 源代码使用的jdk版本 -->
                     <target>${java.version}</target> <!-- 构建后生成class文件jdk版本 -->
@@ -562,7 +564,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>${surefireArgLine}</argLine>
@@ -572,7 +573,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.10</version>
+                <version>${jacoco-maven-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>default-prepare-agent</id>
@@ -600,7 +601,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -613,7 +613,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
                 <configuration>
                     <!-- MANIFEST.MF 文件打包内容-->
                     <archive>
@@ -636,12 +635,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
-                <version>3.1.1</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>3.1.1</version>
             </plugin>
         </plugins>
         <pluginManagement>
