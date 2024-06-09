@@ -27,7 +27,7 @@
         <opencsv.version>5.9</opencsv.version>
         <spring.boot.version>3.2.4</spring.boot.version>
         <spring.cloud.version>2023.0.0</spring.cloud.version>
-        <weixin.java.version>4.6.0</weixin.java.version>
+        <weixin.java.version>4.6.2.B</weixin.java.version>
         <alipay.version>4.39.1.ALL</alipay.version>
         <aliyun.oss.version>3.17.4</aliyun.oss.version>
         <hibernate.type.version>2.21.1</hibernate.type.version>
