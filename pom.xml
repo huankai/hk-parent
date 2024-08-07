@@ -258,12 +258,12 @@
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
-                <artifactId>hk-core-data-jdbc</artifactId>
+                <artifactId>hk-core-data-jpa</artifactId>
                 <version>${hk.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.hk</groupId>
-                <artifactId>hk-core-data-jpa</artifactId>
+                <artifactId>hk-core-data-shardingsphere</artifactId>
                 <version>${hk.version}</version>
             </dependency>
             <dependency>
@@ -602,7 +602,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
                 <configuration>
-                        <!-- 配置打包不生成源码 -source.jar  -->
+                    <!-- 配置打包不生成源码 -source.jar  -->
                     <skipSource>false</skipSource>
                 </configuration>
                 <executions>
