@@ -620,7 +620,6 @@
                 <configuration>
                     <!-- MANIFEST.MF 文件打包内容-->
                     <archive>
-
                         <manifest>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                             <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
