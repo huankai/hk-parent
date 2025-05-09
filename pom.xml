@@ -49,6 +49,7 @@
         <jmh.version>1.37</jmh.version>
         <google.zxing.version>3.5.3</google.zxing.version>
         <google.guava.version>33.4.7-jre</google.guava.version>
+        <nimbus.version>10.2</nimbus.version>
         <mybatis.version>3.5.19</mybatis.version>
         <mybatis.spring.version>3.0.4</mybatis.spring.version>
         <mybatis.springboot.version>3.0.3</mybatis.springboot.version>
@@ -366,6 +367,11 @@
                 <artifactId>guava</artifactId>
                 <version>${google.guava.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <version>${nimbus.version}</version>
+            </dependency>
 
             <!-- poi -->
 
@@ -500,7 +506,7 @@
             </dependency>
 
             <dependency>
-                    <groupId>com.google.zxing</groupId>
+                <groupId>com.google.zxing</groupId>
                 <artifactId>core</artifactId>
                 <version>${google.zxing.version}</version>
             </dependency>
