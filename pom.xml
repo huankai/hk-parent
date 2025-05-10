@@ -25,7 +25,7 @@
         <comons.io.version>2.19.0</comons.io.version>
         <commons.text.version>1.13.1</commons.text.version>
         <opencsv.version>5.10</opencsv.version>
-        <spring.boot.version>3.3.3</spring.boot.version>
+        <spring.boot.version>3.4.4</spring.boot.version>
         <spring.cloud.version>2024.0.1</spring.cloud.version>
         <weixin.java.version>4.7.4.B</weixin.java.version>
         <alipay.version>4.40.133.ALL</alipay.version>
