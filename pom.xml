@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hk-parent</artifactId>
     <groupId>com.hk</groupId>
-    <version>3.4.4</version>
+    <version>3.4.6</version>
     <packaging>pom</packaging>
     <!--
         使用 starter-parent可以修改依赖项目的版本号
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.4</version>
+        <version>3.4.6</version>
         <relativePath/>
     </parent>
 
@@ -25,7 +25,7 @@
         <comons.io.version>2.19.0</comons.io.version>
         <commons.text.version>1.13.1</commons.text.version>
         <opencsv.version>5.10</opencsv.version>
-        <spring.boot.version>3.4.4</spring.boot.version>
+        <spring.boot.version>3.4.6</spring.boot.version>
         <spring.cloud.version>2024.0.1</spring.cloud.version>
         <weixin.java.version>4.7.4.B</weixin.java.version>
         <alipay.version>4.40.133.ALL</alipay.version>
@@ -36,7 +36,7 @@
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.2.0</influxdb.version>
         <poi.version>5.4.1</poi.version>
-        <hk.version>3.4.4</hk.version>
+        <hk.version>3.4.6</hk.version>
         <tencentcloud.version>3.1.1240</tencentcloud.version>
         <oracle.jdbc.version>19.26.0.0</oracle.jdbc.version>
         <curator.version>5.8.0</curator.version>
