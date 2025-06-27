@@ -53,6 +53,8 @@
         <mybatis.version>3.5.19</mybatis.version>
         <mybatis.spring.version>3.0.4</mybatis.spring.version>
         <mybatis.springboot.version>3.0.3</mybatis.springboot.version>
+        <springdoc-openapi.version>2.8.9</springdoc-openapi.version>
+        <therapi.version>0.15.0</therapi.version>
         <jasync.mysql.version>2.2.4</jasync.mysql.version>
         <openfeign.querydsl.version>6.11</openfeign.querydsl.version>
         <maven-clean-plugin.version>3.4.1</maven-clean-plugin.version>
@@ -326,6 +328,11 @@
                 <version>${hk.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-springdoc-openapi</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.github.openfeign.querydsl</groupId>
                 <artifactId>querydsl-jpa</artifactId>
                 <version>${openfeign.querydsl.version}</version>
@@ -551,6 +558,21 @@
                 <groupId>com.github.jasync-sql</groupId>
                 <artifactId>jasync-r2dbc-mysql</artifactId>
                 <version>${jasync.mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc-openapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.therapi</groupId>
+                <artifactId>therapi-runtime-javadoc</artifactId>
+                <version>${therapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.therapi</groupId>
+                <artifactId>therapi-runtime-javadoc-scribe</artifactId>
+                <version>${therapi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
