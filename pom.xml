@@ -33,6 +33,8 @@
         <hibernate.type.version>2.21.1</hibernate.type.version>
         <hibernate.jackson.version>2.20.0</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2023.0.3.3</spring.cloud.alibaba.version>
+        <spring.ai.version>1.0.3</spring.ai.version>
+        <spring.ai.alibaba.version>1.0.0.4</spring.ai.alibaba.version>
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.3.0</influxdb.version>
         <poi.version>5.4.1</poi.version>
@@ -90,6 +92,20 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud.ai</groupId>
+                <artifactId>spring-ai-alibaba-bom</artifactId>
+                <version>${spring.ai.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring.ai.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
