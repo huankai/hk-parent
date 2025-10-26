@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hk-parent</artifactId>
     <groupId>com.hk</groupId>
-    <version>3.5.6</version>
+    <version>3.5.7</version>
     <packaging>pom</packaging>
     <!--
         使用 starter-parent可以修改依赖项目的版本号
@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.6</version>
+        <version>3.5.7</version>
         <relativePath/>
     </parent>
 
@@ -25,20 +25,20 @@
         <comons.io.version>2.20.0</comons.io.version>
         <commons.text.version>1.14.0</commons.text.version>
         <opencsv.version>5.12.0</opencsv.version>
-        <spring.boot.version>3.5.6</spring.boot.version>
+        <spring.boot.version>3.5.7</spring.boot.version>
         <spring.cloud.version>2025.0.0</spring.cloud.version>
         <weixin.java.version>4.7.8.B</weixin.java.version>
         <alipay.version>4.40.472.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
         <hibernate.type.version>2.21.1</hibernate.type.version>
         <hibernate.jackson.version>2.20.0</hibernate.jackson.version>
-        <spring.cloud.alibaba.version>2023.0.3.3</spring.cloud.alibaba.version>
+        <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
         <spring.ai.version>1.0.3</spring.ai.version>
         <spring.ai.alibaba.version>1.0.0.4</spring.ai.alibaba.version>
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.3.0</influxdb.version>
         <poi.version>5.4.1</poi.version>
-        <hk.version>3.5.6</hk.version>
+        <hk.version>3.5.7</hk.version>
         <tencentcloud.version>3.1.1349</tencentcloud.version>
         <oracle.jdbc.version>19.28.0.0</oracle.jdbc.version>
         <curator.version>5.9.0</curator.version>
