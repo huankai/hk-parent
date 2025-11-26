@@ -30,8 +30,8 @@
         <weixin.java.version>4.7.8.B</weixin.java.version>
         <alipay.version>4.40.546.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
-        <hibernate.type.version>2.21.1</hibernate.type.version>
-        <hibernate.jackson.version>2.20.1</hibernate.jackson.version>
+        <hibernate.type.version>3.12.0</hibernate.type.version>
+        <hibernate.jackson.version>3.0.2</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
         <spring.ai.version>1.1.0</spring.ai.version>
         <spring.ai.alibaba.version>1.1.0.0-M5</spring.ai.alibaba.version>
@@ -441,20 +441,22 @@
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${aliyun.oss.version}</version>
             </dependency>
-            <!-- hibernate 类型转换：如 mysql 中的json类型
+            <!-- hibernate 类型转换：如 mysql 中的json类型 71是指你使用的hibernate版本
+                2025-11-26: 这个还是使用的jackson2版本，
+                jackson3 版本参考: https://github.com/Stexxen/hypersistence-utils ，但还没有提交到maven仓库，只能下载源码本地install后使用
+            -->
             <dependency>
-                <groupId>com.vladmihalcea</groupId>
-                <artifactId>hibernate-types-60</artifactId>
+                <groupId>io.hypersistence</groupId>
+                <artifactId>hypersistence-utils-hibernate-71</artifactId>
                 <version>${hibernate.type.version}</version>
             </dependency>
-            -->
-            <!-- jackson hibernate 懒加载配置 查看 JsonUtils 类型中的配置
+            <!-- jackson hibernate 懒加载配置 查看 JsonUtils 类型中的配置  -->
             <dependency>
-                <groupId>com.fasterxml.jackson.datatype</groupId>
-                <artifactId>jackson-datatype-hibernate5-jakarta</artifactId>
+                <groupId>tools.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-hibernate7</artifactId>
                 <version>${hibernate.jackson.version}</version>
             </dependency>
-            -->
+
             <!-- 微信公众号-->
             <dependency>
                 <groupId>com.github.binarywang</groupId>
