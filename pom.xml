@@ -59,10 +59,7 @@
         <therapi.version>0.15.0</therapi.version>
         <jasync.mysql.version>2.2.4</jasync.mysql.version>
         <openfeign.querydsl.version>7.1</openfeign.querydsl.version>
-        <maven-clean-plugin.version>3.4.1</maven-clean-plugin.version>
-        <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
-        <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     </properties>
 
     <!-- 发布到私服地址-->
@@ -622,6 +619,12 @@
                     <target>${java.version}</target> <!-- 构建后生成class文件jdk版本 -->
                     <encoding>${project.build.sourceEncoding}</encoding> <!-- 构建使用的编码 -->
                     <compilerArgs>--enable-preview</compilerArgs> <!-- 启用预览功能 -->
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
 
