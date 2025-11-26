@@ -26,7 +26,7 @@
         <commons.text.version>1.14.0</commons.text.version>
         <opencsv.version>5.12.0</opencsv.version>
         <spring.boot.version>4.0.0</spring.boot.version>
-        <spring.cloud.version>2025.1.0-RC1</spring.cloud.version>
+        <spring.cloud.version>2025.1.0</spring.cloud.version>
         <weixin.java.version>4.7.8.B</weixin.java.version>
         <alipay.version>4.40.546.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
@@ -441,19 +441,20 @@
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${aliyun.oss.version}</version>
             </dependency>
-            <!-- hibernate 类型转换：如 mysql 中的json类型-->
+            <!-- hibernate 类型转换：如 mysql 中的json类型
             <dependency>
                 <groupId>com.vladmihalcea</groupId>
                 <artifactId>hibernate-types-60</artifactId>
                 <version>${hibernate.type.version}</version>
             </dependency>
-            <!-- jackson hibernate 懒加载配置 查看 JsonUtils 类型中的配置 -->
+            -->
+            <!-- jackson hibernate 懒加载配置 查看 JsonUtils 类型中的配置
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-hibernate5-jakarta</artifactId>
                 <version>${hibernate.jackson.version}</version>
             </dependency>
-
+            -->
             <!-- 微信公众号-->
             <dependency>
                 <groupId>com.github.binarywang</groupId>
