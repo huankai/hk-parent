@@ -627,6 +627,10 @@
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </path>
+                        <path>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-configuration-processor</artifactId>
+                        </path>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
@@ -637,7 +641,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <argLine>${surefireArgLine}</argLine>
                 </configuration>
             </plugin>
             <!--     jacoco 单元测试覆盖率插件，与 maven-surefire-plugin 配合一起使用       -->
