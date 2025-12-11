@@ -30,7 +30,7 @@
         <weixin.java.version>4.7.8.B</weixin.java.version>
         <alipay.version>4.40.560.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
-        <hibernate.type.version>3.12.0</hibernate.type.version>
+        <hibernate.type.version>3.13.2</hibernate.type.version>
         <hibernate.jackson.version>3.0.2</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
         <spring.ai.version>1.1.0</spring.ai.version>
