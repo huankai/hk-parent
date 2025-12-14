@@ -23,21 +23,21 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>25</java.version>
         <comons.io.version>2.21.0</comons.io.version>
-        <commons.text.version>1.14.0</commons.text.version>
+        <commons.text.version>1.15.0</commons.text.version>
         <opencsv.version>5.12.0</opencsv.version>
         <spring.boot.version>4.0.0</spring.boot.version>
         <spring.cloud.version>2025.1.0</spring.cloud.version>
         <weixin.java.version>4.7.8.B</weixin.java.version>
-        <alipay.version>4.40.560.ALL</alipay.version>
+        <alipay.version>4.40.576.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
         <hibernate.type.version>3.13.2</hibernate.type.version>
         <hibernate.jackson.version>3.0.2</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
-        <spring.ai.version>1.1.0</spring.ai.version>
+        <spring.ai.version>1.1.2</spring.ai.version>
         <spring.ai.alibaba.version>1.1.0.0-M5</spring.ai.alibaba.version>
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.4.0</influxdb.version>
-        <poi.version>5.5.0</poi.version>
+        <poi.version>5.5.1</poi.version>
         <hk.version>4.0.0</hk.version>
         <tencentcloud.version>3.1.1369</tencentcloud.version>
         <oracle.jdbc.version>19.29.0.0</oracle.jdbc.version>
