@@ -5,7 +5,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>hk-parent</artifactId>
     <groupId>com.hk</groupId>
-    <version>4.0.0</version>
     <packaging>pom</packaging>
     <!--
         使用 starter-parent可以修改依赖项目的版本号
