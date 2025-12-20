@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.1</version>
         <relativePath/>
     </parent>
 
@@ -24,20 +24,20 @@
         <comons.io.version>2.21.0</comons.io.version>
         <commons.text.version>1.15.0</commons.text.version>
         <opencsv.version>5.12.0</opencsv.version>
-        <spring.boot.version>4.0.0</spring.boot.version>
+        <spring.boot.version>4.0.1</spring.boot.version>
         <spring.cloud.version>2025.1.0</spring.cloud.version>
         <weixin.java.version>4.7.8.B</weixin.java.version>
         <alipay.version>4.40.576.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
-        <hibernate.type.version>3.13.2</hibernate.type.version>
-        <hibernate.jackson.version>3.0.2</hibernate.jackson.version>
+        <hibernate.type.version>3.14.1</hibernate.type.version>
+        <hibernate.jackson.version>3.0.3</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
         <spring.ai.version>1.1.2</spring.ai.version>
         <spring.ai.alibaba.version>1.1.0.0-M5</spring.ai.alibaba.version>
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.4.0</influxdb.version>
         <poi.version>5.5.1</poi.version>
-        <hk.version>4.0.0</hk.version>
+        <hk.version>4.0.1</hk.version>
         <tencentcloud.version>3.1.1369</tencentcloud.version>
         <oracle.jdbc.version>19.29.0.0</oracle.jdbc.version>
         <curator.version>5.9.0</curator.version>
@@ -52,8 +52,8 @@
         <google.guava.version>33.5.0-jre</google.guava.version>
         <nimbus.version>10.6</nimbus.version>
         <mybatis.version>3.5.19</mybatis.version>
-        <mybatis.spring.version>3.0.5</mybatis.spring.version>
-        <mybatis.springboot.version>3.0.3</mybatis.springboot.version>
+        <mybatis.spring.version>4.0.0</mybatis.spring.version>
+        <mybatis.springboot.version>4.0.0</mybatis.springboot.version>
         <springdoc-openapi.version>3.0.0</springdoc-openapi.version>
         <therapi.version>0.15.0</therapi.version>
         <jasync.mysql.version>2.2.4</jasync.mysql.version>
@@ -500,7 +500,7 @@
             <!--                <artifactId>rocketmq-spring-boot-starter</artifactId>-->
             <!--            </dependency>-->
 
-            <!--基于zookeeper的客户端实现-->
+            <!--基于 zookeeper 的客户端实现-->
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-recipes</artifactId>
