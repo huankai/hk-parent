@@ -169,6 +169,21 @@
                 <artifactId>hk-core-poi</artifactId>
                 <version>${hk.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-city-web</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-city-webflux</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hk</groupId>
+                <artifactId>hk-core-rbac-web</artifactId>
+                <version>${hk.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.hk</groupId>
