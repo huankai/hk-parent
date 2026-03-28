@@ -13,7 +13,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.1</version>
+        <version>4.0.4</version>
         <relativePath/>
     </parent>
 
@@ -24,21 +24,21 @@
         <comons.io.version>2.21.0</comons.io.version>
         <commons.text.version>1.15.0</commons.text.version>
         <opencsv.version>5.12.0</opencsv.version>
-        <spring.boot.version>4.0.1</spring.boot.version>
-        <spring.cloud.version>2025.1.0</spring.cloud.version>
+        <spring.boot.version>4.0.4</spring.boot.version>
+        <spring.cloud.version>2025.1.1</spring.cloud.version>
         <weixin.java.version>4.7.8.B</weixin.java.version>
-        <alipay.version>4.40.576.ALL</alipay.version>
+        <alipay.version>4.40.700.ALL</alipay.version>
         <aliyun.oss.version>3.18.3</aliyun.oss.version>
         <hibernate.type.version>3.14.1</hibernate.type.version>
         <hibernate.jackson.version>3.0.3</hibernate.jackson.version>
-        <spring.cloud.alibaba.version>2025.0.0.0</spring.cloud.alibaba.version>
-        <spring.ai.version>2.0.0-M2</spring.ai.version>
-        <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
-        <spring.ai.alibaba.extensions.version>1.1.2.1</spring.ai.alibaba.extensions.version>
+        <spring.cloud.alibaba.version>2025.1.0.0</spring.cloud.alibaba.version>
+        <spring.ai.version>2.0.0-M3</spring.ai.version>
+        <spring.ai.alibaba.version>1.1.2.2</spring.ai.alibaba.version>
+        <spring.ai.alibaba.extensions.version>1.1.2.2</spring.ai.alibaba.extensions.version>
         <disruptor.version>4.0.0</disruptor.version>
         <influxdb.version>7.4.0</influxdb.version>
         <poi.version>5.5.1</poi.version>
-        <hk.version>4.0.1</hk.version>
+        <hk.version>4.0.4</hk.version>
         <tencentcloud.version>3.1.1369</tencentcloud.version>
         <oracle.jdbc.version>19.29.0.0</oracle.jdbc.version>
         <curator.version>5.9.0</curator.version>
