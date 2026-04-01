@@ -32,7 +32,7 @@
         <hibernate.type.version>3.14.1</hibernate.type.version>
         <hibernate.jackson.version>3.0.3</hibernate.jackson.version>
         <spring.cloud.alibaba.version>2025.1.0.0</spring.cloud.alibaba.version>
-        <spring.ai.version>2.0.0-M3</spring.ai.version>
+        <spring.ai.version>2.0.0-M4</spring.ai.version>
         <spring.ai.alibaba.version>1.1.2.2</spring.ai.alibaba.version>
         <spring.ai.alibaba.extensions.version>1.1.2.2</spring.ai.alibaba.extensions.version>
         <disruptor.version>4.0.0</disruptor.version>
